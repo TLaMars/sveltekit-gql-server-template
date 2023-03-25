@@ -1,7 +1,7 @@
-const typeDefs = `#graphql
+const goodByeTypeDefs = `#graphql
   type Query {
     bye: String
   }
 `;
 
-export default typeDefs;
+export default goodByeTypeDefs;

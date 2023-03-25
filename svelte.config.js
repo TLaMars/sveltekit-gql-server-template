@@ -13,6 +13,7 @@ const config = {
     // See https://kit.svelte.dev/docs/adapters for more information about adapters.
     adapter: adapter(),
     alias: {
+      gql: "src/core/gql",
       resolvers: "src/core/server/resolvers",
       "type-defs": "src/core/server/type-defs",
       utils: "src/utils",
