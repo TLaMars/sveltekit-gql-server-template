@@ -4,15 +4,10 @@ const config: CodegenConfig = {
   overwrite: true,
   // schema: "./src/core/server/type-defs/*.ts",
   schema: "http://localhost:5173/graphql",
-  // documents: ["./src/core/gql/queries/*.ts"],
+  documents: ["./src/core/gql/queries/*.ts"],
   generates: {
     "./src/core/gql/generated/graphql.ts": {
-      plugins: [
-        "typescript",
-        "typescript-resolvers",
-        "typescript-operations",
-        "named-operations-object",
-      ],
+      plugins: ["typescript", "typescript-resolvers", "typescript-operations"],
       config: {
         namingConvention: {
           enumValues: "keep",

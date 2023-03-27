@@ -1,5 +1,4 @@
 import type { GraphQLResolveInfo } from "graphql";
-
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = Maybe<T>;
 export type Exact<T extends { [key: string]: unknown }> = {
@@ -156,3 +155,7 @@ export type QueryResolvers<
 export type Resolvers<ContextType = any> = {
   Query?: QueryResolvers<ContextType>;
 };
+
+export type HelloQueryVariables = Exact<{ [key: string]: never }>;
+
+export type HelloQuery = { __typename?: "Query"; hello?: string | null };

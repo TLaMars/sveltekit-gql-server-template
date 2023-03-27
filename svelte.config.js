@@ -15,6 +15,7 @@ const config = {
     alias: {
       gql: "src/core/gql",
       resolvers: "src/core/server/resolvers",
+      services: "src/core/services",
       "type-defs": "src/core/server/type-defs",
       utils: "src/utils",
     },
